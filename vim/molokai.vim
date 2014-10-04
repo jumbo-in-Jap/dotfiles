@@ -1,4 +1,3 @@
-
 " Vim color file
 "
 " Author: Tomas Restrepo <tomas@winterdom.com>
@@ -13,7 +12,7 @@ hi clear
 
 
 set background=dark
-if version ]] > 580
+if version  > 580
 " no guarantees for version 5.8 and below, but this makes it stop
 " complaining
     hi clear
@@ -140,7 +139,7 @@ end
 "
 " Support for 256-color terminal
 "
-if &t_Co ]] > 255
+if &t_Co > 255
    hi Boolean ctermfg=135
    hi Character ctermfg=144
    hi Number ctermfg=135

@@ -1,4 +1,3 @@
-
 set number "行番号表示
 set showmode "モード表示
 set title "編集中のファイル名を表示
@@ -26,23 +25,16 @@ set smartindent "オートインデント
 set expandtab "タブの代わりに空白文字挿入
 set ts=4 sw=4 sts=0 "タブは半角4文字分のスペース
 " ファイルを開いた際に、前回終了時の行で起動
-autocmd BufReadPost * if line("'\"") ]] > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
-
-
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
+set backspace=indent,eol,start
 
 
 set ignorecase "検索文字列が小文字の場合は大文字小文字を区別なく検索する
 set smartcase "検索文字列に大文字が含まれている場合は区別して検索する
 set wrapscan "検索時に最後まで行ったら最初に戻る
 
-
-
-
 set nocompatible " be iMproved
 filetype off
-
-
-
 
 if has('vim_starting')
       set runtimepath+=~/.vim/bundle/neobundle.vim
@@ -83,3 +75,5 @@ let g:neocomplcache_manual_completion_start_length = 0
 let g:neocomplcache_caching_percent_in_statusline = 1
 let g:neocomplcache_enable_skip_completion = 1
 let g:neocomplcache_skip_input_time = '0.5'
+
+
