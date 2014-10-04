@@ -114,11 +114,11 @@ RPROMPT="[%*]"
 # -------------------------------------
 
 # -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
-alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
+alias grep="grep --color -n -I --exclude='entries' --exclude='*/cache/*'"
 
 # ls
-alias ls="ls -G" # color for darwin
-alias l="ls -la"
+# alias ls="ls -ls" # color for darwin
+# alias l="ls -la"
 alias la="ls -la"
 alias l1="ls -1"
 
@@ -168,7 +168,7 @@ alias gcl='git clone '
 alias up='cd ..'
 alias upp='cd ../..'
 alias uppp='cd ../../..'
-alias ls='ls -GwF'
+#alias ls='ls -GwF'
 alias la='ls -alh'
 alias t='tar zxvf'
 alias t-='tar xvf -'
@@ -177,9 +177,6 @@ alias dh='df -h'
 alias vi='vim'
 alias v='vim'
 alias sr='screen -d -R'
-alias grep='grep --exclude=*.svn*'
-alias greprn='grep -rn --exclude=*.svn*'
-alias bye='sudo shutdown -h now'
 
 alias cot='open -g -a CotEditor' # ターミナルからCotEditorを開く
 alias mamp='cd /Applications/MAMP/htdocs'
