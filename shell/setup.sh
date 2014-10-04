@@ -1,3 +1,6 @@
+#set -e 
+set -x
+
 # neobundle
 mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
@@ -18,3 +21,9 @@ source ~/.vimrc
 # link
 ln -s ~/dotfile/zsh/.zshrc ~/.zshrc
 
+# zsh
+zsh --version
+if [ $? -gt 0 ]; then
+    sudo yum -y install zsh
+    sudo chsh
+fi

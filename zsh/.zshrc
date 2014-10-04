@@ -99,7 +99,7 @@ function vcs_prompt_info() {
 OK="^_^ "
 NG="X_X "
 
-PROMPT=""
+PROMPT="%{$fg_bold[blue]%}${HOST} "
 PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f) "
 PROMPT+="%F{blue}%~%f"
 PROMPT+="\$(vcs_prompt_info)"
