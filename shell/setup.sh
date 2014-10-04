@@ -20,6 +20,7 @@ source ~/.vimrc
 
 # link
 ln -s ~/dotfile/zsh/.zshrc ~/.zshrc
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 # zsh
 zsh --version
